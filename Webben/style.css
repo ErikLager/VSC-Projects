@@ -1,7 +1,8 @@
 body
 {
     background-color: aqua;
-
+    border: 5px;
+    border-color: maroon;
 }
 .meny
 {
@@ -17,6 +18,11 @@ h1, h2, h3
 {
     font-size: 15px;
     text-decoration: none;
+}
+.start
+{
+    height: 40px;
+    width: 100px;
 }
 header 
 {
@@ -37,4 +43,8 @@ ul
     color: aliceblue;
     background-color: black;
 
+}
+.start
+{
+    
 }
