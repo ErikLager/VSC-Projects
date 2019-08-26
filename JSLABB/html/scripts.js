@@ -9,7 +9,7 @@ for (let i=1; i<=5; i++)
     let id = "list" + i;
     Text="";
     for (pos=0; pos<i;pos++){
-        Text+="📯";
+        Text+="🍆";
         document.getElementById(id).innerHTML= Text;
         console.log(i);
     }
