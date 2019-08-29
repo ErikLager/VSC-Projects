@@ -26,3 +26,16 @@ function square (tal){
 let kvadrat = square(7);
 //console.log(kvadrat);
 
+
+
+function palindrome(myWord){
+    let myWord1 = myWord.split("").reverse().join("");
+    if (myWord1 == myWord){
+        return true;
+    }
+    else{ 
+        return false
+    }
+}
+let result = palindrome ("wrjnio");
+console.log(result);
