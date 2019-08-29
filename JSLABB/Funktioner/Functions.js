@@ -13,7 +13,7 @@ for (let i=min;i <= max; i++){
 return sum; 
 }
 
-let summan = sumFunktion(1,5);
+let summan = sumFunktion(1,5); 
 console.log(summan);
 
 //Kvadrering 
