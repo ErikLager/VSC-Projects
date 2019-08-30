@@ -1,19 +1,36 @@
 let myButton = document.getElementById("knapp");
-/*function click_Console(){
-    console.log("You pressed me");
-}
-function click_Alert() {
-    alert("Nån klicka på knappen");
-}*/
+let i = 1;
+let meddelande = document.getElementById("message");
+let startTime = "";
 
-let nr = Math.floor(Math.random()*150);
-let count = 0;
-function click_DOM(){
+function click_DOM(ev){
+    let nr = Math.floor(Math.random()*500);
+    let nr2 = Math.floor(Math.random()*500);
     let myElement = document.getElementById("knapp");
-    myElement.innerHTML = "Nummert blir: " + nr;
-    count++;
-    myElement.style.borderWidth = nr + "px";
+    myElement.style.marginTop = nr + "px";
+    myElement.style.marginLeft = nr2 + "px";
+    
+    
+           
+    
+
+    console.log(i);
+    i++;
+
+    if(i == 2){
+        startTime = new Date().getTime();
+    } 
+
+    if (i == 11){
+        // console.log("KLAR!!!")
+        let sluttime = new Date().getTime();
+        let final = sluttime-startTime;
+        window.alert("GRATTIS!!! Du klarade det. Din tid var: " + final + " Millisekunder");
+
+        
+    }
     
 }
 
 myButton.onclick = click_DOM;
+
