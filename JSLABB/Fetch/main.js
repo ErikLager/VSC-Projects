@@ -14,9 +14,6 @@ fetch("http://94.46.140.3:8080/teknikumMenu/api/menu")
         myNewMatElement.innerHTML = `<b>${mat.day}</b>` + " " + mat.alt_dish;
         document.getElementById("food").appendChild(myNewMatElement);
         
-        
-        
-        
     }
     for (let matIndex2 = 0; matIndex2 < data.meals.length; ++matIndex2){
         const mat = data.meals [matIndex2]
