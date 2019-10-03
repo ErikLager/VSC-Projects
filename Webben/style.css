@@ -93,6 +93,9 @@ footer{
         user-select: none;
     }
 }
+.sec    {
+    font-size: 1px;
+}
 @media (min-width: 2000px){
     .SATOR{
     background-color: rgb(100, 100, 100);
@@ -101,3 +104,43 @@ footer{
     }
 }
 
+.Container {
+    margin-top: 200px;
+    margin-left: 5vw;
+    width: 40vw;
+    display: grid;
+    /* grid-auto-flow: row; */
+    grid-gap: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Clear Clear Divide Multiply"
+                        "Seven Eight Nine Minus"
+                        "Four Five Six Plus"
+                        "One Two Three Equals"
+                        "Zero Zero Dot Equals";
+}
+/* Justify är i den naturliga läsriktningen, rad för rad från vänster */
+#item1{grid-area: Clear; background-color: #432652;}
+#item2{grid-area: Divide; background-color: chartreuse;}
+#item3{grid-area: Multiply; background-color: fuchsia;}
+#item4{grid-area: Seven; background-color: hotpink;}
+#item5{grid-area: Eight; background-color: seagreen;}
+#item6{grid-area: Nine; background-color: #842854;}
+#item7{grid-area: Minus; background-color: lightsalmon;}
+#item8{grid-area: Four; background-color: darkgreen;}
+#item9{grid-area: Five; background-color: firebrick;}
+#item10{grid-area: Six; background-color: mediumorchid}
+#item11{grid-area: Plus; background-color: lightblue;}
+#item12{grid-area: One; background-color: limegreen;}
+#item13{grid-area: Two; background-color: navy;}
+#item14{grid-area: Three; background-color: olive;}
+#item15{grid-area: Equals; background-color: mediumaquamarine;}
+#item16{grid-area: Zero; background-color: pink;}
+#item17{grid-area: Dot; background-color: orange;}
+.item{
+    background-color: maroon;
+    color: white;
+    height: 80px;
+    font-size: 2em;
+    text-align: center;
+}
