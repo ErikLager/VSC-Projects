@@ -19,35 +19,23 @@ a{
     display: inline-block;
     text-decoration: none;
     color: white;
-
 }
-
-/* .button {
-    background-color: #4CAF50; Green 
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-  } */
+a>li{
+    transition: opacity 10s;
+}
+.meny:hover{
+    opacity: .7;
+}
+.meny:active{
+    opacity: 0;
+}
 h1, h2, h3, p
 {
     color: darkgoldenrod;
 }
-/* .start
-{
-    text-decoration: none;
-    color: white;
-
-} */
 .pepepe{
     color: rgb(88, 142, 58) ;
 }
-/* .start
-{
-    height: 40px;
-    width: 100px;
-    background-color: white;
-} */
 header 
 {
     font-size: 300%;
@@ -114,10 +102,10 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "Clear Clear Divide Multiply"
-                        "Seven Eight Nine Minus"
-                        "Four Five Six Plus"
-                        "One Two Three Equals"
-                        "Zero Zero Dot Equals";
+                         "Seven Eight Nine Minus"
+                         "Four Five Six Plus"
+                         "One Two Three Equals"
+                         "Zero Zero Dot Equals";
 }
 /* Justify är i den naturliga läsriktningen, rad för rad från vänster */
 #item1{grid-area: Clear; background-color: #432652;}
@@ -134,7 +122,7 @@ footer{
 #item12{grid-area: One; background-color: limegreen;}
 #item13{grid-area: Two; background-color: navy;}
 #item14{grid-area: Three; background-color: olive;}
-#item15{grid-area: Equals; background-color: mediumaquamarine;}
+#item15{grid-area: Equals; background-color: mediumaquamarine; align-self: stretch;}
 #item16{grid-area: Zero; background-color: pink;}
 #item17{grid-area: Dot; background-color: orange;}
 .item{
@@ -143,4 +131,33 @@ footer{
     height: 80px;
     font-size: 2em;
     text-align: center;
+    transition: opacity 2s;
+}
+.item:hover{
+    opacity: .5;
+}
+.item:active{
+    opacity: 0;
+}
+
+.Listan{
+    padding: 5%;
+    list-style-type: none;
+}
+.itema{
+    border-style: solid;
+    border-width: 0;
+    text-align: center;
+    padding: 1%;
+    font-size: 3em;
+    background: maroon;
+    color: darkgoldenrod;
+    transition: opacity 1s, border-left-width .5s;
+}
+.itema:hover{
+    opacity: .8;
+    border-left-width: 90px;
+}
+.itema:active{
+    opacity: 0;
 }
